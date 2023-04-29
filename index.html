@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function luwi() {
+
+            var ricxvebi = "";
+
+            for (ricxvi = 1; ricxvi <= 20; ricxvi++) {
+
+                if (ricxvi % 2 == 0) {
+                    ricxvebi += '<span style=" color: transparent">_</span>' + ricxvi + '<span style=" color: transparent">_</span>';
+                }
+            }
+            //print the values
+            document.getElementById("shedegi").innerHTML = ricxvebi;
+        }
+
+    </script>
+
+    <style>
+        body {
+            font-size: 23px;
+            font-family: calibri;
+            color: rgb(180, 70, 110);
+            font-weight: 600;
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 95vh;
+            gap: 20px;
+        }
+
+        #gilaki {
+            width: 250px;
+            height: 80px;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+            background-color: rgb(255, 215, 222);
+            border: 3px solid rgb(180, 70, 110);
+            color: rgb(180, 70, 110);
+            font-weight: 600;
+        }
+
+        #shedegi {
+            letter-spacing: 0.2rem;
+            font-size: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>დააჭირე რომ ნახო ლუწი რიცხვები 1-დან 20-მდე.</p>
+    <input type="button" id="gilaki" onclick="luwi()" value="დააჭირე!" />
+    <p id="shedegi"></p>
+
+</body>
+
+</html>
